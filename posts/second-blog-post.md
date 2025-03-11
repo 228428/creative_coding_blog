@@ -18,40 +18,45 @@ In this class, we covered the absolute basics, but what stood out to me as new a
 
 ## HomeWork 1
 
-The code i used to fix the problem is
+### The code I used to fix the problem is
 
-function setup() {
-
-createCanvas(400, 400);
-
-colorMode(HSB)
-
-rectMode(CENTER)
-
-noStroke()
-}
-
-function draw() {
-const t = frameCount / 25
-background(`turquoise`);
-fill(`deeppink`);
-
-const cols = 10; // Number of columns
-const rows = 10; // Number of rows
-const size = width / cols;
-
-for (let y = 0; y < rows; y++) { // Loop over rows
-for (let x = 0; x < cols; x++) { // Loop over columns
-let xpos = size _ (x + 0.5);
-let ypos = size _ (y + 0.5);
-let squareSize = (t \* (x + y + 1)) % size;
-square(xpos, ypos, squareSize);
-}
-}
-}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquam rutrum ultrices. Praesent quam purus, tincidunt ac ipsum vel, aliquet placerat quam. Pellentesque eget erat dolor. Nulla accumsan sodales ex, a molestie dolor porta et. Praesent ut mauris tincidunt velit malesuada volutpat. Aliquam sodales feugiat tortor, non consectetur lacus feugiat eu. Aliquam facilisis cursus ex quis viverra. Quisque molestie quam ac efficitur molestie. Curabitur at nisi id ipsum elementum semper quis vel nibh. Nam maximus diam eget dolor mollis, at tristique nisi luctus. Fusce commodo condimentum ipsum, quis eleifend nibh. Ut tincidunt lacus et justo pellentesque lobortis.
+![Grids](homework1.png)
+to be very honest in the beginng i wasn't vey sure what technique would be used to create a loop with this but using the p5.js referernce and a youtube video allowed to come to the conclusion of a nested for loop.
 
 ## HomeWork 2
 
 ![Horizon](horizon.png)
 We were asked to choose a work by Rafaël Rozendaal and I chose his work called the horizon. To describe the artwork it is a canvas divided into two uneven sections in which both changes into randomised colour when the mouse is clicked on the screen. How I think the code works is that he would have set a canvas and create a shape on the lower section of the canvas.
+
+# This is Week 1 Session 2
+
+## Reflection
+
+This session we got a deeper introduction into what creative coding is.
+
+## Homework 1
+
+During this task I spoke to my classmates Sam and Lam and this what what each of them had to say:
+
+Sam
+
+What do you think is going on, under the hood? In Sams perspective she noticed Every time you click the screen the colors change randomly so she came to the same conclusion as me and said we used the mouse press down.
+
+what concepts would I need to understand in order to replicate this work in p5? These are the skills she thinks would require me to learn this technique: Use RBG colors to randomize the color, mouse down code, creating a square on my canvas.
+
+what resources might help me to learn those concepts? And these are the references she thinks would help me better understand the concept YouTube, p5 reference, and google.
+
+Lam
+
+Similarly
+
+What do you think is going on, under the hood? Lam observed two squares when you click the screen the colors changes randomly.
+
+what concepts would I need to understand in order to replicate this work in p5? Lam said I would be required to learn how to change the color randomly when screen is clicked
+
+what resources might help me to learn those concepts? simiar to sam, Lam gave me the same resources such as YouTube, p5 reference, and google
+
+## Homework 2
+
+For the second homework for htis session we were supposed to take one technique from the art work and apply it to p5.js an seeming that I had only one technique required I created somethging similar but with a circle to play on more shapes. This is the code:
+![Mousedown](homework2.png)
