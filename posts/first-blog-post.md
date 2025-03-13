@@ -1,5 +1,5 @@
 ---
-title: Week 1 Blog
+title: Sample Blog
 published_at: 2025-03-04
 snippet: What I learnt in week 1
 disable_html_sanitization: true
