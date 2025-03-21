@@ -21,6 +21,8 @@ In this class, we covered the absolute basics, but what stood out to me as new a
 ### The code I used to fix the problem is
 
 ![Grids](homework1.png)
+
+<iframe id="grid_for_loop" src="https://editor.p5js.org/228428/sketches/bxjYAqtyH"></iframe>
 to be very honest in the beginng i wasn't vey sure what technique would be used to create a loop with this but using the p5.js referernce and a youtube video allowed to come to the conclusion of a nested for loop.
 
 ## HomeWork 2
@@ -32,31 +34,65 @@ We were asked to choose a work by Rafaël Rozendaal and I chose his work called 
 
 ## Reflection
 
-This session we got a deeper introduction into what creative coding is.
+In this session, we stepped away from coding and explored the history and ideas behind creative coding. I found it really eye-opening to learn how it started—not just as a technical skill, but as a form of artistic expression. It made me realise that coding can be more than logic; it can be playful, experimental, and even emotional.
+
+Understanding the backstory helped ease some of my doubts. It reminded me that creative coding isn’t about perfection—it’s about curiosity and trying new things. I still have a lot to learn, but this session gave me a better sense of why we’re doing this, and that makes me feel a bit more confident moving forward.
 
 ## Homework 1
 
-During this task I spoke to my classmates Sam and Lam and this what what each of them had to say:
+### Rafaël Rozendaal – Classmate Reflections
 
-Sam
+During this task, I spoke to my classmates Sam and Lam about the Rafaël Rozendaal work I chose last session. I asked them three questions to help deepen my understanding of how I could replicate a similar interaction using p5.js.
 
-What do you think is going on, under the hood? In Sams perspective she noticed Every time you click the screen the colors change randomly so she came to the same conclusion as me and said we used the mouse press down.
+### Sam
 
-what concepts would I need to understand in order to replicate this work in p5? These are the skills she thinks would require me to learn this technique: Use RBG colors to randomize the color, mouse down code, creating a square on my canvas.
+#### What do you think is going on, under the hood?
 
-what resources might help me to learn those concepts? And these are the references she thinks would help me better understand the concept YouTube, p5 reference, and google.
+Sam noticed that every time you click the screen, the colors change randomly. She agreed with my observation that this effect likely uses the mousePressed() function.
 
-Lam
+#### What concepts would I need to understand in order to replicate this work in p5?
 
-Similarly
+She mentioned that I’d need to learn how to:
 
-What do you think is going on, under the hood? Lam observed two squares when you click the screen the colors changes randomly.
+Use RGB colors to randomize the background or object colors
+Use the mousePressed() function
+Create and position a square on the canvas
 
-what concepts would I need to understand in order to replicate this work in p5? Lam said I would be required to learn how to change the color randomly when screen is clicked
+#### What resources might help me to learn those concepts?
 
-what resources might help me to learn those concepts? simiar to sam, Lam gave me the same resources such as YouTube, p5 reference, and google
+Sam suggested:
+
+YouTube tutorials
+The p5.js reference page
+Good old Google search
+
+### Lam
+
+#### What do you think is going on, under the hood?
+
+Lam observed that there are two squares on the screen, and clicking causes their colors to change randomly.
+
+#### What concepts would I need to understand in order to replicate this work in p5?
+
+He explained that I’d need to learn how to:
+
+Detect mouse clicks
+Randomize color using RGB values
+Apply those colors to the shapes
+
+#### What resources might help me to learn those concepts?
+
+Like Sam, Lam recommended:
+
+YouTube
+p5.js reference
+Google
 
 ## Homework 2
 
-For the second homework for htis session we were supposed to take one technique from the art work and apply it to p5.js an seeming that I had only one technique required I created somethging similar but with a circle to play on more shapes. This is the code:
+For the second homework of this session, we were asked to take one technique from the Rafaël Rozendaal artwork we discussed and apply it in p5.js. The main technique I focused on was the use of random color changes triggered by mouse clicks.
+
+Since that was the only technique required, I decided to keep it simple and stay true to the original form—I kept the shape as a square. This helped me focus purely on understanding and applying the color-changing interaction without getting distracted by other elements.:
 ![Mousedown](homework2.png)
+
+<iframe id="mouse_down" src="https://editor.p5js.org/228428/sketches/X7qQhlY_7"></iframe>
