@@ -101,4 +101,52 @@ Next up, I’ll refactor this into a version with classes to clean up the code a
 
 But for now, I’m really happy with how this version captures the emotion and sweetness I’m trying to express
 
-FEEDBACK
+# Week 3 Session 2
+
+## Reflection / HomeWork
+
+This session, I had to leave class early because I was feeling really tired and overwhelmed. I wasn’t able to fully focus, and I didn’t want to push myself too hard mentally, so I chose to step away and rest. Sometimes you have to listen to your body and mind, and I’m learning that that’s okay.
+
+Even though I couldn’t stay for the whole class, I still wanted to keep up, so I made sure to complete the homework on my own time. Below is my response.
+
+How my AT1 uses each concept:
+
+Variables: I use variables like lanternsAllowed to control whether lanterns can appear, and starCount to control how many stars are drawn in the sky.
+
+Functions: I define and use custom functions such as drawSky() to organise my code and keep things clean and easy to read.
+
+Iteration: I use for loops to repeat actions, like drawing multiple stars in the background and looping through the lanterns array to update and display them each frame.
+
+Boolean Logic: I use boolean logic in conditions, like checking if (lanternsAllowed) before allowing a lantern to appear.
+
+Arrays: I use arrays to store multiple objects. The lanterns array keeps track of all the floating lanterns, and the stars array stores information about each star.
+
+Classes: I created a Lantern class to control how each lantern behaves. It includes a constructor and methods to update and display each lantern, making the code more organised and scalable.
+
+Rough Draft Embedded:
+
+I’ve embedded a rough draft of my AT1 project on my blog. It features a full-screen night sky, soft glowing stars, and Rapunzel-inspired lanterns that float when the user clicks anywhere on the screen. Each lantern appears with a soft chime sound.
+
+How well I achieved cuteness:
+
+In the visual domain, I focused on soft colours, pastel tones, glowing effects, and gentle motion. I think the rounded lantern shapes and sparkly stars help achieve a dreamy, cute vibe.
+
+In the sonic domain, the soft chime that plays when a lantern appears adds a small moment of magic. It’s light and satisfying, which fits the cute aesthetic without being overwhelming.
+
+In the interactive domain, clicking to release lanterns feels gentle and pressure-free. There are no rules, just the joy of floating lanterns and making wishes. I think this calm and playful interactivity helps reinforce the cute mood of the piece.
+
+Communities and resources I used:
+
+I used the p5.js reference site to understand how different functions work, and I learned a lot from in-class examples and feedback. I also relied on my own notes, tutorials, and feedback from my tutor to refine and improve my code. I used ChatGPT to help explain some confusing parts and organise my logic.
+
+What I’ve enjoyed most:
+
+I’ve really enjoyed the creative process of bringing my vision to life. Being able to visually design something that feels personal and magical has been very rewarding. I also liked learning how to control small interactions and make them feel soft and emotional.
+
+What I found surprising:
+
+I was surprised at how small changes—like colour choice or animation speed—can make a big difference in how something feels. I also found that using a class made my code much easier to understand and expand, which I didn’t expect at first.
+
+What I’ve struggled with the most:
+
+The most challenging part has been managing sound and trying to make it work consistently. I also found some of the logic with classes and arrays confusing at first, especially when trying to remove objects from arrays or handle multiple lanterns. But over time, I started to understand it more by experimenting and reviewing the code step by step.
