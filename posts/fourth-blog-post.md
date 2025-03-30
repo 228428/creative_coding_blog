@@ -65,3 +65,40 @@ The visuals are bold and flat, but not aggressive.
 The interaction is simple, immediate, and responsive.
 The sound is playful and light, adding fun without chaos.
 It feels like a digital toy — something you could zone out with, or mess with just because it’s oddly satisfying.
+
+<iframe id="draft" src="https://editor.p5js.org/"></iframe>
+This version of my Tangled-inspired sketch is made using only functions, variables, and arrays — no classes yet. I wanted to get the look and feeling right before jumping into more complex code. My goal is to create a piece that feels soft, emotional, and magical, and is a tribute to my grandmother (my kindred spirit).
+
+The inspiration comes from the lantern scene in Tangled, where floating lanterns rise into the night sky. In this version of my project, every time the user clicks anywhere on the canvas, a lantern appears right at that spot, floats upward, and disappears with a gentle motion and sound.
+
+Here’s how I’m building the aesthetic of “cute” through visuals, sound, and interaction:
+
+Visually Cute
+To make the piece visually cute, I focused on soft shapes, glowing effects, and pastel colors. Each lantern is a rounded rectangle in warm tones like peach, pink, and golden yellow. Beneath the lantern is a soft glow effect, created using a translucent white ellipse. The background is a solid deep navy blue, like a peaceful night sky, scattered with small white stars to bring a dreamy vibe.
+
+The lanterns float slowly and gently upward, which gives the whole sketch a sense of calm and comfort. There's no fast motion or harsh lines—just soft visuals and easy movement.
+
+Sonically Cute
+I added a soft chime sound that plays every time a lantern is released. It’s short and sweet, not too loud or dramatic—more like a magical sparkle sound. There’s no background music in this version yet, but I plan to add the Tangled instrumental soundtrack in the next version to really tie the whole mood together.
+
+This one gentle sound helps build the cute mood by making every click feel like a little moment of magic. It rewards the interaction without overwhelming it.
+
+Interactively Cute
+Instead of using a button, I wanted the interaction to feel natural and free. In this sketch, all you do is click anywhere on the canvas. Wherever you click, a lantern appears and floats upward from that exact spot.
+
+There are no rules, limits, or goals. You can click once, or a hundred times. Each lantern is slightly different in color, size, and speed, which keeps the experience playful and alive.
+
+This kind of interaction is low-pressure and calm, and makes the whole experience feel like a digital wishing well. That freedom, slowness, and softness is what makes it feel cute.
+
+This version of my AT1 sketch doesn’t use classes yet — just basic functions and arrays — but it helped me build the vibe and feeling I want. The visuals are soft and dreamy, the sound is light and rewarding, and the interaction is simple but meaningful.
+
+Even without advanced code, I’m already getting the aesthetic of cute across by making it:
+
+Visually calm and pastel
+Sonically gentle
+Interactively friendly and magical
+Next up, I’ll refactor this into a version with classes to clean up the code and make it easier to add more features like fading, background music, or even animated sparkles.
+
+But for now, I’m really happy with how this version captures the emotion and sweetness I’m trying to express
+
+FEEDBACK
