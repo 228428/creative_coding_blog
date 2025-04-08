@@ -1,5 +1,5 @@
 ---
-title: Week 4
+title: Redundancy, Style, & Refactorisation
 published_at: 2025-03-24
 snippet: What I learnt in week 4
 disable_html_sanitization: true
