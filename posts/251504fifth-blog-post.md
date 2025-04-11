@@ -75,89 +75,92 @@ One thing that stuck with me is that glitch art isn’t just messing things up f
 
 ## HomeWork
 
+```html
 <canvas id="glitch_self_portrait"></canvas>
 
 <script type="module">
   // get the canvas element by its ID
-  const cnv = document.getElementById(`glitch_self_portrait`)
+  const cnv = document.getElementById(`glitch_self_portrait`);
 
   // set the canvas width to match its container and height to 16:9 ratio
-  cnv.width = cnv.parentNode.scrollWidth
-  cnv.height = cnv.width * 9 / 16
+  cnv.width = cnv.parentNode.scrollWidth;
+  cnv.height = (cnv.width * 9) / 16;
 
   // set background color for loading
-  cnv.style.backgroundColor = `deeppink`
+  cnv.style.backgroundColor = `deeppink`;
 
   // get the 2D drawing context
-  const ctx = cnv.getContext(`2d`)
+  const ctx = cnv.getContext(`2d`);
 
-  let img_data // we'll store base64 image data here later
+  let img_data; // we'll store base64 image data here later
 
   // draws an image (i) to fill the canvas
-  const draw = i => ctx.drawImage(i, 0, 0, cnv.width, cnv.height)
+  const draw = (i) => ctx.drawImage(i, 0, 0, cnv.width, cnv.height);
 
   // create a new image element
-  const img = new Image()
+  const img = new Image();
 
   img.onload = () => {
     // once loaded, update canvas height to match image aspect ratio
-    cnv.height = cnv.width * (img.height / img.width)
+    cnv.height = cnv.width * (img.height / img.width);
 
     // draw the image to canvas
-    draw(img)
+    draw(img);
 
     // get a base64 string version of the image
-    img_data = cnv.toDataURL("image/jpeg")
+    img_data = cnv.toDataURL("image/jpeg");
 
     // start adding glitches
-    add_glitch()
-  }
+    add_glitch();
+  };
 
-  img.src = `/scripts/251504/me.JPG`
+  img.src = `/scripts/251504/me.`;
 
   // helper: return a random whole number under max
-  const rand_int = max => Math.floor(Math.random() * max)
+  const rand_int = (max) => Math.floor(Math.random() * max);
 
   // glitchify: remove random chunks of the image data string
   const glitchify = (data, chunk_max, repeats) => {
-    const chunk_size = rand_int(chunk_max / 4) * 4 // glitch chunk must be a multiple of 4
-    const i = rand_int(data.length - 24 - chunk_size) + 24 // start somewhere safe in the string
-    const front = data.slice(0, i) // keep the start
-    const back = data.slice(i + chunk_size) // keep the end, skip the chunk
-    const result = front + back // combine it back together
+    const chunk_size = rand_int(chunk_max / 4) * 4; // glitch chunk must be a multiple of 4
+    const i = rand_int(data.length - 24 - chunk_size) + 24; // start somewhere safe in the string
+    const front = data.slice(0, i); // keep the start
+    const back = data.slice(i + chunk_size); // keep the end, skip the chunk
+    const result = front + back; // combine it back together
 
     // if we still have repeats left, do it again
-    return repeats === 0 ? result : glitchify(result, chunk_max, repeats - 1)
-  }
+    return repeats === 0 ? result : glitchify(result, chunk_max, repeats - 1);
+  };
 
-  const glitch_arr = [] // array to hold all the glitched frames
+  const glitch_arr = []; // array to hold all the glitched frames
 
   // add a glitched frame to the array
   const add_glitch = () => {
-    const i = new Image()
+    const i = new Image();
     i.onload = () => {
-      glitch_arr.push(i)
-      if (glitch_arr.length < 12) add_glitch() // keep generating until we have 12
-      else draw_frame() // then start animating
-    }
-    i.src = glitchify(img_data, 96, 6) // create glitch and load it into an image
-  }
+      glitch_arr.push(i);
+      if (glitch_arr.length < 12)
+        add_glitch(); // keep generating until we have 12
+      else draw_frame(); // then start animating
+    };
+    i.src = glitchify(img_data, 96, 6); // create glitch and load it into an image
+  };
 
-  let is_glitching = false // track if we're showing a glitch
-  let glitch_i = 0 // which glitch frame we're on
+  let is_glitching = false; // track if we're showing a glitch
+  let glitch_i = 0; // which glitch frame we're on
 
   // the animation loop
   const draw_frame = () => {
-    if (is_glitching) draw(glitch_arr[glitch_i])
-    else draw(img)
+    if (is_glitching) draw(glitch_arr[glitch_i]);
+    else draw(img);
 
     // chance to switch state
-    const prob = is_glitching ? 0.05 : 0.02
+    const prob = is_glitching ? 0.05 : 0.02;
     if (Math.random() < prob) {
-      glitch_i = rand_int(glitch_arr.length)
-      is_glitching = !is_glitching
+      glitch_i = rand_int(glitch_arr.length);
+      is_glitching = !is_glitching;
     }
 
-    requestAnimationFrame(draw_frame)
-  }
+    requestAnimationFrame(draw_frame);
+  };
 </script>
+```
