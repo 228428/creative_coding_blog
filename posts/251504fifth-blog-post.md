@@ -252,3 +252,16 @@ One thing that stuck with me is that glitch art isn’t just messing things up f
   };
 </script>
 ```
+
+🎭 Glitching Myself: Aesthetic Reflection
+Rendering my self-portrait through glitch code completely changes how I see myself — and how others see me too. Instead of a clean, smooth image, my face becomes unstable, flickering, and distorted. It no longer looks “correct,” and that’s exactly what makes it interesting.
+
+From Ngai’s aesthetic registers, I think this self-portrait falls mostly under “the interesting” and “the zany.” It’s interesting because it makes you stop and try to figure it out — the glitch disrupts expectations, and you have to look longer. It’s zany because it’s constantly shifting, flickering between clean and broken frames. There’s energy, confusion, and even a bit of chaos.
+
+The concept of effective complexity really comes through here. The glitchy portrait isn’t just random — it uses a clear structure (drawing the same image again and again), but it adds randomness by cutting chunks out of the data. This creates a balance between order and disorder — enough structure to understand what’s going on, but enough unpredictability to keep it alive and dynamic.
+
+From the Glitch Readings, I connected most with Chroma Glitch, where they talk about turning digital errors into something meaningful. Instead of hiding mistakes, glitch artists highlight them — they turn failure into form. That’s exactly what’s happening in my portrait: what’s “wrong” becomes the visual language.
+
+From the Net Art Readings, I thought about artists like JODI, who mess with websites to break the user experience on purpose. Like them, I’m using code to disrupt what people expect — not just to be aesthetic, but to make people notice how digital systems work and what happens when they fall apart.
+
+So overall, glitching my likeness takes it from a normal image to something that’s full of questions, energy, and a kind of digital honesty. It’s not about being perfect — it’s about being expressive, unpredictable, and maybe a little unhinged 💥
