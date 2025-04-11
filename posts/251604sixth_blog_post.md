@@ -87,7 +87,7 @@ Three.js – to create surreal 3D spaces and distort them.
 
 ## Reflection
 
-This week, we were introduced to Three.js, and honestly… I struggled at first 😅. We worked with the <div id="three.js_container"></div> setup and imported everything from camera, lighting, and geometry to finally rendering a 3D teapot with a GUI controller. It was really overwhelming seeing how much needed to be imported and how detailed the file paths had to be. Like, if one path is wrong, the whole sketch just won’t run — which was a big lesson for me.
+This week, we were introduced to Three.js, and honestly… I struggled at first 😅. We worked with the setup and imported everything from camera, lighting, and geometry to finally rendering a 3D teapot with a GUI controller. It was really overwhelming seeing how much needed to be imported and how detailed the file paths had to be. Like, if one path is wrong, the whole sketch just won’t run — which was a big lesson for me.
 
 I learned that everything needs to be carefully structured: from setting the canvas, lighting, camera, controls, to textures and even the shading options. Even though I didn’t understand everything immediately, things started to make more sense as I went back and checked line by line. It really made me realize how complex 3D environments are and how one small typo or missing path breaks the entire render.
 
