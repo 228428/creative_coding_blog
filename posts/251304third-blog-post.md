@@ -1,5 +1,5 @@
 ---
-title: Cute as an Aesthetic Register
+title: Week Two
 published_at: 2025-13-04
 snippet: What I learnt in week 2
 disable_html_sanitization: true

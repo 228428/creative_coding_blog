@@ -1,5 +1,5 @@
 ---
-title: Redundancy, Style, & Refactorisation
+title: Week Four
 published_at: 2025-03-24
 snippet: What I learnt in week 4
 disable_html_sanitization: true
@@ -60,3 +60,104 @@ One of her artworks I liked was “The Collapse of PAL”. It’s based on an ol
 Even though it looks chaotic, the glitching is not totally random. It’s built on a real system — so there’s still structure underneath the chaos. That’s what makes it an example of high effective complexity. You can see patterns, but there’s also surprise and randomness. It’s like controlled chaos.
 
 Rosa uses these glitches to make us think about the digital systems we rely on — like how fragile they are, and how even small changes can break them. Her work is a mix of technical knowledge and creativity, and that’s what makes it powerful.
+
+# Week 4 Session 1
+
+## Reflection
+
+I wasn’t in class this week, but I did read some of the text about glitch art and datamoshing, and honestly, it was kind of wild but super interesting.
+
+The artwork they talked about — Compression Study #1 — takes a music video from Rihanna and blends it with the Cranberries’ Zombie, using digital glitches to make it all fall apart in this weird, beautiful way. It looks random, but it’s actually very controlled. The artists choose when and how to “break” the video. That balance between chaos and control is what makes it so powerful.
+
+The reading also explained the difference between analog and digital. Analog is more smooth and blended (like sunsets or paint mixing), while digital is more clean and blocky (like pixels or computer code). Datamoshing kind of lives between those two — it’s digital, but it looks messy and emotional, like a painting that’s melting.
+
+One thing that stuck with me is that glitch art isn’t just messing things up for no reason. It’s about taking something that’s supposed to be “wrong” and turning it into something creative. That feels really relatable.
+
+## HomeWork
+
+<canvas id="glitch_self_portrait"></canvas>
+
+<script type="module">
+  // get the canvas element by its ID
+  const cnv = document.getElementById(`glitch_self_portrait`)
+
+  // set the canvas width to match its container and height to 16:9 ratio
+  cnv.width = cnv.parentNode.scrollWidth
+  cnv.height = cnv.width * 9 / 16
+
+  // set background color for loading
+  cnv.style.backgroundColor = `deeppink`
+
+  // get the 2D drawing context
+  const ctx = cnv.getContext(`2d`)
+
+  let img_data // we'll store base64 image data here later
+
+  // draws an image (i) to fill the canvas
+  const draw = i => ctx.drawImage(i, 0, 0, cnv.width, cnv.height)
+
+  // create a new image element
+  const img = new Image()
+
+  img.onload = () => {
+    // once loaded, update canvas height to match image aspect ratio
+    cnv.height = cnv.width * (img.height / img.width)
+
+    // draw the image to canvas
+    draw(img)
+
+    // get a base64 string version of the image
+    img_data = cnv.toDataURL("image/jpeg")
+
+    // start adding glitches
+    add_glitch()
+  }
+
+  img.src = `/scripts/251504/me.jpg`
+
+  // helper: return a random whole number under max
+  const rand_int = max => Math.floor(Math.random() * max)
+
+  // glitchify: remove random chunks of the image data string
+  const glitchify = (data, chunk_max, repeats) => {
+    const chunk_size = rand_int(chunk_max / 4) * 4 // glitch chunk must be a multiple of 4
+    const i = rand_int(data.length - 24 - chunk_size) + 24 // start somewhere safe in the string
+    const front = data.slice(0, i) // keep the start
+    const back = data.slice(i + chunk_size) // keep the end, skip the chunk
+    const result = front + back // combine it back together
+
+    // if we still have repeats left, do it again
+    return repeats === 0 ? result : glitchify(result, chunk_max, repeats - 1)
+  }
+
+  const glitch_arr = [] // array to hold all the glitched frames
+
+  // add a glitched frame to the array
+  const add_glitch = () => {
+    const i = new Image()
+    i.onload = () => {
+      glitch_arr.push(i)
+      if (glitch_arr.length < 12) add_glitch() // keep generating until we have 12
+      else draw_frame() // then start animating
+    }
+    i.src = glitchify(img_data, 96, 6) // create glitch and load it into an image
+  }
+
+  let is_glitching = false // track if we're showing a glitch
+  let glitch_i = 0 // which glitch frame we're on
+
+  // the animation loop
+  const draw_frame = () => {
+    if (is_glitching) draw(glitch_arr[glitch_i])
+    else draw(img)
+
+    // chance to switch state
+    const prob = is_glitching ? 0.05 : 0.02
+    if (Math.random() < prob) {
+      glitch_i = rand_int(glitch_arr.length)
+      is_glitching = !is_glitching
+    }
+
+    requestAnimationFrame(draw_frame)
+  }
+</script>

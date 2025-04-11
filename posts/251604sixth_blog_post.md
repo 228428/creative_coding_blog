@@ -1,6 +1,6 @@
 ---
-title: Redundancy, Style, & Refactorisation
-published_at: 2025-04-03
+title: Week Five
+published_at: 2025-03-31
 snippet: What I learnt in week 5
 disable_html_sanitization: true
 allow_math: true
