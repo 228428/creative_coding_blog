@@ -180,7 +180,7 @@ One thing that stuck with me is that glitch art isn’t just messing things up f
   // get the 2D drawing context
   const ctx = cnv.getContext(`2d`);
 
-  let img_data; // we'll store base64 image data here later
+  let img_data; // i'll store image data here later
 
   // draws an image (i) to fill the canvas
   const draw = (i) => ctx.drawImage(i, 0, 0, cnv.width, cnv.height);
@@ -195,14 +195,14 @@ One thing that stuck with me is that glitch art isn’t just messing things up f
     // draw the image to canvas
     draw(img);
 
-    // get a base64 string version of the image
+    // get a image string version of the image
     img_data = cnv.toDataURL("image/jpeg");
 
     // start adding glitches
     add_glitch();
   };
 
-  img.src = `/scripts/251504/me.`;
+  img.src = `/scripts/251504/me.JPG`;
 
   // helper: return a random whole number under max
   const rand_int = (max) => Math.floor(Math.random() * max);
