@@ -113,7 +113,7 @@ One thing that stuck with me is that glitch art isn’t just messing things up f
     add_glitch();
   };
 
-  img.src = `/scripts/251504/me.`;
+  img.src = `/scripts/251504/me.JPG`;
 
   // helper: return a random whole number under max
   const rand_int = (max) => Math.floor(Math.random() * max);
