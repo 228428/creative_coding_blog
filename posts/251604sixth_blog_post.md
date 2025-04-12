@@ -446,3 +446,13 @@ Even though I had a hard time getting it to work at first, I eventually got ther
   }
 </script>
 ```
+
+### Glitch art by Sabato Visconti
+
+The piece is a black 3D rose that glitches — and it’s definitely zany. The way it moves and distorts feels wild and unpredictable, like it’s alive or glitching out of control. That chaotic energy makes it stand out.
+
+Even though it’s glitching, you can still clearly tell it’s a rose. That’s what gives it effective complexity — it keeps the structure of a familiar object, but adds digital distortion on top. The balance between something we know (a rose) and something unexpected (the glitch) makes it more interesting to look at.
+
+How it probably works:
+
+The artist might have messed with the 3D model’s texture or mesh file — basically scrambling the digital “code” that builds the rose. Or they could be using an effect that causes the form to shift, flicker, or break apart over time.
