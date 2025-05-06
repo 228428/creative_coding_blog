@@ -456,3 +456,26 @@ Even though it’s glitching, you can still clearly tell it’s a rose. That’s
 How it probably works:
 
 The artist might have messed with the 3D model’s texture or mesh file — basically scrambling the digital “code” that builds the rose. Or they could be using an effect that causes the form to shift, flicker, or break apart over time.
+
+### Rita.js Poem
+
+Here’s the JavaScript I used with RiTa.js to generate the poem:
+
+```js
+const lines = [
+  "roots remember the touch of data",
+  "syntax breaks beneath the moss",
+  "pixels hum in recursive bloom",
+  "this structure was never silent",
+];
+
+for (let line of lines) {
+  const words = RiTa.tokenize(line);
+  const i = Math.floor(Math.random() * words.length);
+  const rhymes = RiTa.rhymes(words[i]);
+  if (rhymes.length > 0) {
+    words[i] = rhymes[Math.floor(Math.random() * rhymes.length)];
+  }
+  console.log(words.join(" "));
+}
+```
